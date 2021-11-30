@@ -1,0 +1,40 @@
+.service {
+  .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+
+    .box {
+      border-radius: 0.5rem;
+      background: #333;
+      text-align: center;
+      padding: 2.5rem;
+
+      &:hover {
+        transform: scale(0.9);
+        border-radius: 0.5rem;
+        border: 0.1rem solid var(--main-color);
+      }
+
+      i {
+        height: 6rem;
+        width: 6rem;
+        line-height: 6rem;
+        border-radius: 50%;
+        font-size: 2.5rem;
+        background: var(--main-color);
+        color: white;
+      }
+      h3 {
+        font-size: 2rem;
+        color: white;
+        padding: 1rem 0;
+      }
+      p {
+        font-size: 1.4rem;
+        color: #eee;
+        line-height: 1.8;
+      }
+    }
+  }
+}

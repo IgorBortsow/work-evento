@@ -1,0 +1,56 @@
+.contact {
+  form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+
+    .inputBox {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      input {
+        width: 49%;
+        background: #333;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        margin: 0.7rem 0;
+        font-size: 1.5rem;
+        color: white;
+        text-transform: none;
+
+        &::placeholder {
+          color: #eee;
+          text-transform: capitalize;
+        }
+        &:focus {
+          background: #555;
+        }
+
+        @media (max-width: 400px) {
+          width: 100%;
+        }
+      }
+    }
+    textarea {
+      width: 100%;
+      background: #333;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      margin: 0.7rem 0;
+      font-size: 1.5rem;
+      color: white;
+      text-transform: none;
+      resize: none;
+
+      &::placeholder {
+        color: #eee;
+        text-transform: capitalize;
+      }
+
+      &:focus {
+        background: #555;
+      }
+    }
+  }
+}
